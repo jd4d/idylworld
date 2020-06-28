@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // components
 import Home from "./home";
 import Orchards from "./orchards";
-import Idylworld from "./idylworld";
-import Contact from "./contact";
-import About from "./about";
+import Connected from "./connected";
+import Abundant from "./abundant";
+import Healthful from "./healthful";
 
 function App() {
     return (
@@ -15,9 +15,9 @@ function App() {
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/orchards" exact component={Orchards} />
-                    <Route path="/idylworld" exact component={Idylworld} />
-                    <Route path="/contact" exact component={Contact} />
-                    <Route path="/about" exact component={About} />
+                    <Route path="/connected" exact component={Connected} />
+                    <Route path="/abundant" exact component={Abundant} />
+                    <Route path="/healthful" exact component={Healthful} />
                 </Switch>
             </div>
         </Router>

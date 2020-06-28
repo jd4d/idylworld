@@ -12,7 +12,6 @@ import {
 
 // icons & images
 import idylworldLogo from "../../assets/idylworld-logo.png";
-import homeIcon from "../../assets/home-grey.png";
 
 class Navbar extends Component {
     render() {
@@ -24,13 +23,10 @@ class Navbar extends Component {
                         <NavbarTitle>Idylworld</NavbarTitle>
                     </LeftAlignedContainer>
                     <RightAlignedContainer>
-                        <NavbarItem href="/">
-                            <img src={homeIcon} alt="home" style={{ width: "26px" }} />
-                        </NavbarItem>
-                        <NavbarItem href="/orchards">Connected</NavbarItem>
-                        <NavbarItem href="/idylworld">Abundant</NavbarItem>
-                        <NavbarItem href="/idylworld">Healthful</NavbarItem>
-                        <NavbarItem href="/contact">Orchards</NavbarItem>
+                        <NavbarItem href="/connected">Connected</NavbarItem>
+                        <NavbarItem href="/abundant">Abundant</NavbarItem>
+                        <NavbarItem href="/healthful">Healthful</NavbarItem>
+                        <NavbarItem href="/orchards">Orchards</NavbarItem>
                     </RightAlignedContainer>
                 </NavbarContainer>
             </>

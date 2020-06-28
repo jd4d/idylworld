@@ -19,8 +19,10 @@ import {
     OrangeHighlight,
     GreenHighlight,
     VideoPlayer,
+    GreenBlock,
 } from "./styled";
 import Navbar from "../navbar";
+import Footer from "../footer";
 
 // icons & images
 import instagramLogo from "../../assets/instagram-white.png";
@@ -40,7 +42,7 @@ class Home extends Component {
                         <BlueHighlight>connected</BlueHighlight>,<OrangeHighlight>abundant</OrangeHighlight>and
                         <GreenHighlight>healthful</GreenHighlight> for the successful discerning global Indian.
                     </LargeCenteredDescription>
-                    <WatchVideoButton href="#other">Watch Our Video</WatchVideoButton>
+                    <WatchVideoButton href="#video">Watch Our Video</WatchVideoButton>
                     <FollowUsAndIconsContainer>
                         <FollowUs>follow us</FollowUs>
                         <WhiteLine />
@@ -54,15 +56,15 @@ class Home extends Component {
                             <SocialMediaWhiteLogo src={twitterLogo} alt="tw" />
                         </a>
                     </FollowUsAndIconsContainer>
-                    <ScrollButtonContainer href="#other">
+                    <ScrollButtonContainer id="video" href="#video">
                         <ScrollButtonImage src={scrollButton} alt="scroll button" />
                     </ScrollButtonContainer>
                 </BackgroundImage>
-                <GreyFullscreen id="other">
+                <GreyFullscreen>
                     <VideoPlayer
                         fluid={false}
                         playsInline
-                        width={1200}
+                        width={1100}
                         muted
                         autoPlay
                         loop={true}
@@ -71,6 +73,7 @@ class Home extends Component {
                         <ControlBar autoHide={true} disableCompletely={true} />
                     </VideoPlayer>
                 </GreyFullscreen>
+                <Footer />
             </>
         );
     }

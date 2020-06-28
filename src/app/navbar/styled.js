@@ -8,13 +8,14 @@ export const NavbarContainer = styled.div`
     top: 0;
     left: 0;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     z-index: 1;
+    padding: 0 10px 0 30px;
 `;
 
 export const LeftAlignedContainer = styled.a`
-    position: fixed;
-    left: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -22,8 +23,6 @@ export const LeftAlignedContainer = styled.a`
 `;
 
 export const RightAlignedContainer = styled.div`
-    position: fixed;
-    right: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;

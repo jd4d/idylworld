@@ -1,27 +1,25 @@
 import styled from "styled-components";
 import { Player } from "video-react";
 
+// components
+import { FullscreenContainer } from "../_shared/styled.js";
+
 // images
 import landingImage from "../../assets/idylworld-main.jpg";
 
-export const BackgroundImage = styled.div`
-    height: calc(100vh - 65px);
-    padding-top: 65px;
-    width: 100vw;
+export const BackgroundImage = styled(FullscreenContainer)`
     background-image: url(${landingImage});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    margin-top: 65px;
 `;
 
 export const LargeCenteredQuote = styled.div`
     color: white;
     font-size: 60px;
     font-family: Work Sans;
-    padding-top: 43vh;
+    padding-top: 35vh;
 `;
 
 export const LargeCenteredDescription = styled.div`
@@ -69,8 +67,8 @@ export const FollowUs = styled.div`
     font-family: Montserrat;
     font-size: 18px;
     letter-spacing: 2px;
-    width: 100px;
-    padding-right: 120px;
+    width: 200px;
+    padding-right: 100px;
 `;
 
 export const WhiteLine = styled.div`
@@ -94,11 +92,8 @@ export const ScrollButtonImage = styled.img`
     border: none;
 `;
 
-export const GreyFullscreen = styled.div`
-    height: calc(100vh - 65px);
+export const GreyFullscreen = styled(FullscreenContainer)`
     background-color: #f5f5f5;
-    display: flex;
-    align-items: center;
     justify-content: center;
 `;
 
@@ -126,4 +121,12 @@ export const VideoPlayer = styled(Player)`
     :focus {
         outline: none !important;
     }
+`;
+
+export const GreenBlock = styled.div`
+    height: calc(100vh - (300px + 65px));
+    background: #637f44;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
